@@ -1,0 +1,123 @@
+
+#ifndef FIELDS_H_
+#define FIELDS_H_
+
+
+typedef enum{
+	DISABLED,
+	ENABLED
+}State;
+
+typedef enum{
+	Position1 = 1,
+	Position2,
+	Position3,
+	Position4,
+	Position5,
+	Position6,
+	Position7,
+	Position8
+}PDO_position;
+
+typedef enum{
+    RAM_Write,
+	MTP_Write
+}Memory_Write;
+
+typedef enum{
+	Nothing_Attached,
+	SDP,
+	CDP,
+	DCP
+}Port_type;
+
+typedef enum{
+	SRC,
+	SNK,
+	DRP
+}Power_Role;
+
+typedef enum{
+	MOIST_DET_OFF,
+	MOIST_DET_ON
+}Moisture_Det;
+
+typedef enum{
+	TrySNK_OFF,
+	TrySNK_ON
+}TrySNK_Mode;
+
+
+#define COMMAND_WRITE_ADDRESS  0x21
+#define COMMAND_WRITE_DATA_0   0x22
+#define COMMAND_WRITE_DATA_1   0x23
+#define COMMAND_WRITE_DATA_2   0x24
+#define COMMAND_WRITE_DATA_3   0x25
+#define COMMAND_WRITE_DATA_4   0x26
+#define COMMAND_WRITE_DATA_5   0x27
+#define COMMAND_WRITE_DATA_6   0x28
+#define COMMAND_WRITE_DATA_7   0x29
+#define COMMAND_WRITE_DATA_8   0x2A
+#define COMMAND_WRITE_DATA_9   0x2B
+#define COMMAND_WRITE_DATA_10  0x2C
+#define COMMAND_WRITE_DATA_11  0x2D
+#define COMMAND_WRITE_DATA_12  0x2E
+#define COMMAND_WRITE_DATA_13  0x2F
+#define COMMAND_WRITE_DATA_14  0x30
+#define COMMAND_WRITE_DATA_15  0x31
+#define COMMAND_WRITE_DATA_16  0x32
+#define COMMAND_WRITE_DATA_17  0x33
+#define COMMAND_WRITE_DATA_18  0x34
+#define COMMAND_WRITE_DATA_19  0x35
+#define COMMAND_WRITE_DATA_20  0x36
+#define COMMAND_WRITE_DATA_21  0x37
+#define COMMAND_WRITE_DATA_22  0x38
+#define COMMAND_WRITE_DATA_23  0x39
+#define COMMAND_WRITE_DATA_24  0x3A
+#define COMMAND_WRITE_DATA_25  0x3B
+#define COMMAND_WRITE_DATA_26  0x3C
+#define COMMAND_WRITE_DATA_27  0x3D
+#define COMMAND_WRITE_DATA_28  0x3E
+#define COMMAND_WRITE_DATA_29  0x3F
+#define COMMAND_WRITE_DATA_30  0x40
+
+#define COMMAND_END_ADDRESS    0x41
+
+#define COMMAND_READ_ADDRESS  0x51
+#define COMMAND_READ_DATA_0   0x52
+#define COMMAND_READ_DATA_1   0x53
+#define COMMAND_READ_DATA_2   0x54
+#define COMMAND_READ_DATA_3   0x55
+#define COMMAND_READ_DATA_4   0x56
+#define COMMAND_READ_DATA_5   0x57
+#define COMMAND_READ_DATA_6   0x58
+#define COMMAND_READ_DATA_7   0x59
+#define COMMAND_READ_DATA_8   0x5A
+#define COMMAND_READ_DATA_9   0x5B
+#define COMMAND_READ_DATA_10  0x5C
+#define COMMAND_READ_DATA_11  0x5D
+#define COMMAND_READ_DATA_12  0x5E
+#define COMMAND_READ_DATA_13  0x5F
+#define COMMAND_READ_DATA_14  0x60
+#define COMMAND_READ_DATA_15  0x61
+#define COMMAND_READ_DATA_16  0x62
+#define COMMAND_READ_DATA_17  0x63
+#define COMMAND_READ_DATA_18  0x64
+#define COMMAND_READ_DATA_19  0x65
+#define COMMAND_READ_DATA_20  0x66
+#define COMMAND_READ_DATA_21  0x67
+#define COMMAND_READ_DATA_22  0x68
+#define COMMAND_READ_DATA_23  0x69
+#define COMMAND_READ_DATA_24  0x6A
+#define COMMAND_READ_DATA_25  0x6B
+#define COMMAND_READ_DATA_26  0x6C
+#define COMMAND_READ_DATA_27  0x6D
+#define COMMAND_READ_DATA_28  0x6E
+#define COMMAND_READ_DATA_29  0x6F
+#define COMMAND_READ_DATA_30  0x70
+#define COMMAND_READ_DATA_31  0x71
+
+
+
+
+#endif /* MAX77958_FIELDS_H_ */
